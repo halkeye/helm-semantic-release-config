@@ -18,7 +18,10 @@ pipeline {
         NODE_ENV = 'development'
       }
       steps {
-        sh 'npm ci'
+        sh '''
+          asdf Install
+          npm ci
+        '''
       }
     }
 
