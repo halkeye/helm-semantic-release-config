@@ -1,0 +1,25 @@
+{
+  "name": "@halkeye/helm-semantic-release-config",
+  "version": "1.0.0",
+  "description": "Config for helm releases",
+  "main": "release.config.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halkeye/helm-semantic-release-config.git"
+  },
+  "author": "Gavin Mogan <npm@gavinmogan.com> (https://www.gavinmogan.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halkeye/helm-semantic-release-config/issues"
+  },
+  "homepage": "https://github.com/halkeye/helm-semantic-release-config#readme",
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release-helm3": "^2.4.1"
+  }
+}
