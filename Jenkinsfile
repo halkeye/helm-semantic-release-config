@@ -47,7 +47,7 @@ pipeline {
             sh '''
               git status
 
-              npx semantic-release --repositoryUrl "https://x-access-token:$GITHUB_TOKEN@github.com/jenkins-infra/jenkins-io-components.git"
+              npx semantic-release --repositoryUrl "https://x-access-token:$GITHUB_TOKEN@github.com/halkeye/helm-semantic-release-config"
             '''
           }
         }
