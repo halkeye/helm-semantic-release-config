@@ -1,6 +1,9 @@
 {
   "name": "@halkeye/helm-semantic-release-config",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Config for helm releases",
   "main": "release.config.cjs",
   "scripts": {
