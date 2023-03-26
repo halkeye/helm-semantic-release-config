@@ -44,7 +44,11 @@ pipeline {
           withCredentials([usernamePassword(credentialsId: 'github-app-halkeye',
                 usernameVariable: 'GITHUB_APP',
                 passwordVariable: 'GITHUB_TOKEN')]) {
-            sh 'npx semantic-release --repositoryUrl https://x-access-token:$GITHUB_TOKEN@github.com/jenkins-infra/jenkins-io-components.git'
+            sh '''
+              git status
+
+              npx semantic-release --repositoryUrl "https://x-access-token:$GITHUB_TOKEN@github.com/jenkins-infra/jenkins-io-components.git"
+            '''
           }
         }
       }
