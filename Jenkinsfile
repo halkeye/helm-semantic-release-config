@@ -19,7 +19,7 @@ pipeline {
       }
       steps {
         sh '''
-          asdf Install
+          asdf install
           npm ci
         '''
       }
