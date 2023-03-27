@@ -5,7 +5,7 @@
     "access": "public"
   },
   "description": "Config for helm releases",
-  "main": "release.config.cjs",
+  "main": "index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
