@@ -13,6 +13,12 @@ pipeline {
   }
 
   stages {
+    stage('git pull') {
+      steps {
+        sh 'git pull --tags'
+      }
+    }
+
     stage('Install Dependencies') {
       environment {
         NODE_ENV = 'development'
