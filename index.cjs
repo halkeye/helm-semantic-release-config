@@ -3,7 +3,7 @@ const Handlebars = require('handlebars')
 
 Handlebars.registerHelper("yamlString", function (options) {
   const input = options.fn(this).trim()
-  return yaml.dump(input.replace(/^\s*\*\s*/g, '').trim(), {lineWith: 999, forceQuotes: true});
+  return yaml.dump(input.replace(/^\s*\*\s*/g, '').trim(), {lineWith: 999, forceQuotes: true, quotingType: '"'});
 });
 
 module.exports = {

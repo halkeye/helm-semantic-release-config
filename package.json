@@ -17,7 +17,7 @@
     ]
   },
   "files": [
-    "release.config.cjs"
+    "index.cjs"
   ],
   "repository": {
     "type": "git",
